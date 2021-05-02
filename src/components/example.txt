@@ -1,0 +1,116 @@
+App.js
+import Greet from './components/Greet'
+import Welcome from './components/Welcome'
+import Hello from './components/Hello'
+import Message from './components/Message'
+import Counter from './components/Counter'
+import FunctionClick from './components/FunctionClick'
+import ClassClick from './components/ClassClick'
+import EventBind from './components/EventBind'
+import ParentComponent from './components/ParentComponent'
+import UserGreeting from './components/UserGreeting'
+import styles from './components/appStyles.module.css'
+import './components/appStyles.css'
+import React, { Component, pureComponent } from 'react';
+import NameList from './components/NameList'
+import StyleSheet from './components/StyleSheet'
+import Inline from './components/Inline'
+import Form from './components/Form'
+import LifecycleA from './components/LifecycleA'
+import FragmentDemo from './components/FragmentDemo'
+import Table from './components/Table'
+import Apple from './components/Apple'
+import ParentComp from './components/ParentComp'
+import RefsDemo from './components/RefsDemo'
+import FocusInput from './components/FocusInput'
+import FRParentInput from './components/FRParentInput';
+import PortalDemo from './components/PortalDemo';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
+
+
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Form/>
+
+
+
+      {/* <h1 className='error'>error</h1>
+      <h1 className={styles.sucess}>Sucess</h1>
+      <Inline /> */}
+      {/* <StyleSheet primary={true}/> */}
+      {/* <NameList/> */}
+      {/* <UserGreeting /> */}
+      {/* <ParentComponent/> */}
+
+      {/* <Message />
+      <Counter/> */}
+      {/* <ClassClick/>
+      <FunctionClick/> */}
+      {/* <EventBind/> */}
+      
+      {/* <Greet name="Bruce" heroname="batman">
+        <p>This is children props</p>
+      </Greet>
+      <Greet name="clarl" heroname="superman">
+        <button>Action</button></Greet>
+      <Greet name="Apple" heroname="wonderwoman"/>
+      <Welcome name="Bruce" heroname="batman" />
+      <Welcome name="clarl" heroname="superman" />
+      <Welcome name="Apple" heroname="wonderwoman" />
+      <Hello/> */}
+      <ErrorBoundary><Hero heroName = "batman"/></ErrorBoundary>
+        <ErrorBoundary>
+        <Hero heroName = "Joker"/></ErrorBoundary>
+//     </div>
+//   );
+// }
+
+//HIGHER order components
+
+import ClickCouner from './components/ClickCouner';
+import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverConterTwo from './components/HoverConterTwo';
+import User from './components/User';
+import Counte from './components/Counte';
+
+//Render Props
+{/* <ClickCounterTwo/>
+        <HoverConterTwo/>
+        <User render= {(isLoggedIn) => isLoggedIn ? 'Pradeep' : 'Guest'}/> */}
+        <Counte>{(count, incrementCount) =>(
+          <ClickCounterTwo count = {count} incrementCount= {incrementCount} />
+        )}</Counte>
+        <Counte>{(count, incrementCount) =>(
+          <HoverConterTwo count = {count} incrementCount= {incrementCount} />
+        )}</Counte>
+
+
+// Context
+<UserProvider value= "Pradeep">
+          <ComponentC/>
+        </UserProvider>
+        
+
+//Http and react
+ HTTP get request
+ Http post request
+
+ import PostList from './components/PostList';
+import PostForm from './components/PostForm';
+
+Hook......
+import ClassCounter from './components/ClassCounter';
+import HookCounter from './components/HookCounter';
+import HookCounterTwo from './components/HookCounterTwo';
+import HookCounterThree from './components/HookCounterThree';
+import HookCounterFour from './components/HookCounterFour';
+
+in DOM
+
+        <ClassCounter/>
+        <HookCounter/>
